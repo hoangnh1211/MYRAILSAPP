@@ -1,0 +1,20 @@
+<div id="<%= dom_id band %>">
+  <p>
+    <strong>Name:</strong>
+    <%= band.name %>
+  </p>
+  <p>
+    <strong>address:</strong>
+    <%= band.address %>
+  </p>
+  <p>
+    <strong>title:</strong>
+    <%= band.title %>
+  </p>
+  <% band.members.each do |member| %>
+    <p>
+    <strong>name</strong>
+    <%= member.name %>
+    </p>
+  <% end %>
+</div>
